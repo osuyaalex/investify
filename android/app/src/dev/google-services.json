@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:997699136930:android:586af939afb8447e3256fb",
+        "mobilesdk_app_id": "1:997699136930:android:bd166bc862aa0a583256fb",
         "android_client_info": {
-          "package_name": "com.example.investify"
+          "package_name": "com.example.investify.dev"
         }
       },
       "oauth_client": [],
