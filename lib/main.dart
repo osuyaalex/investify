@@ -24,19 +24,22 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    final themeNotifier = Provider.of<ThemeNotifier>(context, listen: false);
-    return ScreenUtilInit(
-        minTextAdapt: true,
-        ensureScreenSize: true,
-        builder: (context, child) {
-        return MaterialApp(
-          debugShowCheckedModeBanner: false,
-          title: 'Flutter Demo',
-          theme: ThemeData.light(),
-          darkTheme: ThemeData.dark(),
-          themeMode: themeNotifier.themeMode,
-          home: StartScreen(),
-          builder: EasyLoading.init(),
+    return Consumer<ThemeNotifier>(
+      builder: (context, themeNotifier,child) {
+        return ScreenUtilInit(
+            minTextAdapt: true,
+            ensureScreenSize: true,
+            builder: (context, child) {
+            return MaterialApp(
+              debugShowCheckedModeBanner: false,
+              title: 'Flutter Demo',
+              theme: ThemeData.light(),
+              darkTheme: ThemeData.dark(),
+              themeMode: themeNotifier.themeMode,
+              home: StartScreen(),
+              builder: EasyLoading.init(),
+            );
+          }
         );
       }
     );

@@ -28,7 +28,7 @@ class _SignUpState extends State<SignUp> {
     return Form(
       key: _key,
       child: Scaffold(
-        backgroundColor: AppColors.scaffoldBackground,
+        //backgroundColor: AppColors.scaffoldBackground,
         appBar: AppBar(
           backgroundColor: AppColors.scaffoldBackground,
         ),

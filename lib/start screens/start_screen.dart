@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:investify/constant/appColors.dart';
 import 'package:investify/start%20screens/login.dart';
 import 'package:investify/widgets/elevated_button.dart';
 import 'package:investify/start%20screens/signup.dart';
 import 'package:investify/tools/sizes.dart';
+
+import '../tools/theme_provider.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen({super.key});
@@ -12,7 +13,7 @@ class StartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.scaffoldBackground,
+     // backgroundColor: AppColors.scaffoldBackground,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 25.0),
         child: Center(

@@ -63,6 +63,7 @@ class _HomePageState extends State<HomePage> {
   ];
   @override
   Widget build(BuildContext context) {
+
     return FutureBuilder<Map<String, dynamic>>(
         future: _fetchUserData(auth.currentUser!.uid),
       builder: (BuildContext context, snapshot) {
@@ -80,10 +81,10 @@ class _HomePageState extends State<HomePage> {
           String? fullName = data['name'].split(" ").first;
           String? totalAssets = NumberFormat('#,###').format(data['totalAssetPortfolio']);
           return Scaffold(
-            backgroundColor: AppColors.scaffoldBackground,
+            //backgroundColor: AppColors.scaffoldBackground,
             appBar: AppBar(
               automaticallyImplyLeading: false,
-              backgroundColor: AppColors.scaffoldBackground,
+             // backgroundColor: AppColors.scaffoldBackground,
               title: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -301,7 +302,7 @@ class _HomePageState extends State<HomePage> {
           );
         }
         return Scaffold(
-          backgroundColor: AppColors.scaffoldBackground,
+          //backgroundColor: AppColors.scaffoldBackground,
           body: Center(
             child: CircularProgressIndicator(color: AppColors.elevateGreen,),
           ),

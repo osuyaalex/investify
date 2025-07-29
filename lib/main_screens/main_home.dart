@@ -25,11 +25,11 @@ class _MainHomeState extends State<MainHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.scaffoldBackground,
+      //backgroundColor: AppColors.scaffoldBackground,
       body: _body[_currentIndex],
       bottomNavigationBar:
       BottomNavigationBar(
-        backgroundColor: AppColors.scaffoldBackground,
+       // backgroundColor: AppColors.scaffoldBackground,
           type: BottomNavigationBarType.fixed,
           elevation: 0,
           currentIndex: _currentIndex,

@@ -62,9 +62,9 @@ class _ContactInfoState extends State<ContactInfo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.scaffoldBackground,
+      //backgroundColor: AppColors.scaffoldBackground,
       appBar: AppBar(
-        backgroundColor: AppColors.scaffoldBackground,
+        //backgroundColor: AppColors.scaffoldBackground,
         title: Text('Contact Info',
         style: TextStyle(
           fontSize: 15,
